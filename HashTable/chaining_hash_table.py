@@ -1,4 +1,4 @@
-class CollisionHashTable:
+class ChainingHashTable:
     def __init__(self):
         self.MAX = 100
         self.arr= [[] for i in range(self.MAX)]
@@ -64,7 +64,7 @@ class CollisionHashTable:
 
 
 if __name__ == "__main__":
-    ht = CollisionHashTable()
+    ht = ChainingHashTable()
 
     n = ht.get_hash("march 6")
     print(n)
